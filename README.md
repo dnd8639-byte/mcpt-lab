@@ -8,7 +8,7 @@
 
 Almost any strategy looks profitable once its parameters are tuned on past prices, including on prices that are pure noise. `mcpt-lab` asks the question that matters instead: **does this strategy do better on the real market than the same tuning process does on markets where any real pattern has been destroyed?**
 
-It uses **Monte Carlo permutation tests (MCPT)**: shuffle the order of real price moves hundreds of times, re-run the entire strategy on each shuffled copy, and see where the real result lands. This follows the four-step process of [neurotrader888/mcpt](https://github.com/neurotrader888/mcpt), with realistic trading costs, extra null tests, a test suite, and a **ledger that records every test you run**.
+It uses **Monte Carlo permutation tests (MCPT)**: shuffle the order of real price moves hundreds of times, re-run the entire strategy on each shuffled copy, and see where the real result lands. This is derivative of the four-step process of [neurotrader888/mcpt](https://github.com/neurotrader888/mcpt), with realistic trading costs, extra null tests, a test suite, and a **ledger that records every test you run**.
 
 ![Permutation explainer](results/figures/permutation_explainer.png)
 
